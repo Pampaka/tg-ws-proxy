@@ -1115,8 +1115,8 @@ def main():
         description='Telegram Desktop WebSocket Bridge Proxy')
     ap.add_argument('--port', type=int, default=DEFAULT_PORT,
                     help=f'Listen port (default {DEFAULT_PORT})')
-    ap.add_argument('--host', type=str, default='127.0.0.1',
-                    help='Listen host (default 127.0.0.1)')
+    ap.add_argument('--host', type=str, default='0.0.0.0',
+                    help='Listen host (default 0.0.0.0)')
     ap.add_argument('--dc-ip', metavar='DC:IP', action='append',
                     default=['2:149.154.167.220', '4:149.154.167.220'],
                     help='Target IP for a DC, e.g. --dc-ip 1:149.154.175.205'
